@@ -1,13 +1,81 @@
-StylesheetByBrowser
-===================
+= stylesheet_by_browser
 
-Introduction goes here.
+Ruby on Rails helper insert the stylesheet according to the browser.
 
+== Instalation
 
-Example
-=======
+=== Step 1
 
-Example goes here.
+<pre>
+<code>
+./script/plugin install git://github.com/patrickespake/stylesheet_by_browser.git
+</code>
+</pre>
 
+=== Step 2
+
+Then install the necessary files into your public directory by running
+
+<pre>
+<code>
+rake stylesheet_by_browser:install
+</code>
+</pre>
+
+The files will be added: chrome.css, firefox.css, ie.css, opera.css and safari.css in the directory public/stylesheets.
+
+=== Step 3
+
+Lastly, add the following line to the <head> element of your application view:
+
+<pre>
+<code>
+<%= stylesheet_by_browser %>
+</code>
+</pre>
+
+Now you’re all set!
+
+== Example
+
+<pre>
+<code>
+<%= stylesheet_by_browser %>
+</code>
+</pre>
+
+<pre>
+<code>
+<%= stylesheet_by_browser, :media => "all" %>
+</code>
+</pre>
+
+<pre>
+<code>
+<%= stylesheet_by_browser, :media => "print" %>
+</code>
+</pre>
+
+<pre>
+<code>
+<%= stylesheet_by_browser, :media => "screen" %>
+</code>
+</pre>
+
+== Documentation
+
+http://lab.patrickespake.com/stylesheet_by_browser
+
+== Uninstall
+
+<pre>
+<code>
+rake stylesheet_by_browser:uninstall
+</code>
+</pre>
 
 Copyright (c) 2009 Patrick Espake, released under the MIT license
+
+Site: http://www.patrickespake.com
+Blog: http://blog.patrickespake.com
+Email: patrickespake@gmail.com
