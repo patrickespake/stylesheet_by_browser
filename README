@@ -18,7 +18,7 @@ The files will be added: chrome.css, firefox.css, ie.css, opera.css and safari.c
 
 === Step 3
 
-Lastly, add the following line to the <head> element of your application view:
+Lastly, add the following line to the head element of your application view:
 
 <%= stylesheet_by_browser %>
 
@@ -46,4 +46,4 @@ Copyright (c) 2009 Patrick Espake, released under the MIT license
 
 Site: http://www.patrickespake.com
 Blog: http://blog.patrickespake.com
-Email: patrickespake@gmail.com
+Email: mailto:patrickespake@gmail.com

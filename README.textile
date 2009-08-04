@@ -26,7 +26,7 @@ The files will be added: chrome.css, firefox.css, ie.css, opera.css and safari.c
 
 h3. Step 3
 
-Lastly, add the following line to the <head> element of your application view:
+Lastly, add the following line to the head element of your application view:
 
 <pre>
 <code>
