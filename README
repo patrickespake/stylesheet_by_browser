@@ -28,11 +28,11 @@ Now you’re all set!
 
 <%= stylesheet_by_browser %>
 
-<%= stylesheet_by_browser, :media => "all" %>
+<%= stylesheet_by_browser :media => "all" %>
 
-<%= stylesheet_by_browser, :media => "print" %>
+<%= stylesheet_by_browser :media => "print" %>
 
-<%= stylesheet_by_browser, :media => "screen" %>
+<%= stylesheet_by_browser :media => "screen" %>
 
 == Documentation
 

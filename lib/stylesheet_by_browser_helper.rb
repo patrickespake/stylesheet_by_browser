@@ -17,9 +17,9 @@ module StylesheetByBrowserHelper
   #
   # Example of use:
   #   <%= stylesheet_by_browser %>
-  #   <%= stylesheet_by_browser, :media => "all" %>
-  #   <%= stylesheet_by_browser, :media => "print" %>
-  #   <%= stylesheet_by_browser, :media => "screen" %>
+  #   <%= stylesheet_by_browser :media => "all" %>
+  #   <%= stylesheet_by_browser :media => "print" %>
+  #   <%= stylesheet_by_browser :media => "screen" %>
   def stylesheet_by_browser(options = {})
     unless user_agent_name.nil?
       stylesheet_link_tag(user_agent_name.to_s, options)
