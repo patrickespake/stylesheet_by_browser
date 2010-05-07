@@ -18,7 +18,9 @@ module StylesheetByBrowser
   def user_agent_name
     ua = request.user_agent.downcase
 
-    if ua =~ /firefox\//
+    if ua =~ /msie 6/i
+      :ie6
+    elsif ua =~ /firefox\//
       :firefox
     elsif ua =~ /opera\//
       :opera

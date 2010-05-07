@@ -14,7 +14,7 @@ Then install the necessary files into your public directory by running
 
 rake stylesheet_by_browser:install
 
-The files will be added: chrome.css, firefox.css, ie.css, opera.css and safari.css in the directory public/stylesheets.
+The files will be added: chrome.css, firefox.css, ie6.css, ie.css, opera.css and safari.css in the directory public/stylesheets.
 
 === Step 3
 

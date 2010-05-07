@@ -26,6 +26,11 @@ class StylesheetByBrowserHelperTest < ActionView::TestCase
     request.env["HTTP_USER_AGENT"] = "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/530.5 (KHTML, like Gecko) Chrome/2.0.172.37 Safari/530.5"
     assert_match(/chrome.css/, stylesheet_by_browser)
   end
+  
+  def test_should_stylesheet_by_ie6
+    request.env["HTTP_USER_AGENT"] = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Trident/4.0; GTB6)"
+    assert_match(/ie6.css/, stylesheet_by_browser)
+  end
 
   def test_should_stylesheet_by_ie
     request.env["HTTP_USER_AGENT"] = "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB6)"
